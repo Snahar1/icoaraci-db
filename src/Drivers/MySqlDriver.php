@@ -59,5 +59,7 @@ class MySqlDriver implements DriverInterface {
         return $stmt->execute(array_values($where));
     }
   
-  // Os outros métodos (insert, update, delete) viriam aqui...
+ public function beginTransaction() { return $this->pdo->beginTransaction(); }
+ public function commit() { return $this->pdo->commit(); }
+ public function rollback() { return $this->pdo->rollback(); }
 }
