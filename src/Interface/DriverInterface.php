@@ -7,4 +7,7 @@ interface DriverInterface {
     public function insert(string $table, array $data);
     public function update(string $table, array $data, array $where);
     public function delete(string $table, array $where);
+    public function beginTransaction();
+    public function commit();
+    public function rollback();
 }
