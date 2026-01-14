@@ -1,0 +1,5 @@
+{
+    "name": "snahar/icoaraci-db",
+    "version": "1.0.0",
+    "description": "Motor de abstração e persistência de dados do Ecossistema Scorpion."
+}
